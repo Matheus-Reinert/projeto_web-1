@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(to bottom,rgb(0, 158, 124), white);
+    height: 638px;
+    width: 1313px;
+}
+
+.card{
+    font-size: 20px;
+    background-color: rgb(0, 221, 173);
+    border-color: rgb(0, 0, 0);
+    border: 300;
+    color: white;
+    margin: 10px; 
+}
+
+.post-detail img{
+    width: 800px;
+    height: 400px;  
+}
+
+.post-detail h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: blue;
+}
