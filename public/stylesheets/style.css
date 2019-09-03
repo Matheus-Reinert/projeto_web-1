@@ -1,26 +1,43 @@
 body{
-    background-image: linear-gradient(to bottom,rgb(0, 158, 124), white);
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255), rgb(0, 5, 71));
     height: 638px;
     width: 1313px;
+    position: relative;
+}
+
+.nav{
+    color: black;
+   
 }
 
 .card{
     font-size: 20px;
-    background-color: rgb(0, 221, 173);
+    background-color: rgb(255, 255, 255);
     border-color: rgb(0, 0, 0);
     border: 300;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 10px; 
 }
 
 .post-detail img{
     width: 800px;
-    height: 400px;  
+    height: 400px; 
+    box-align: center; 
 }
 
 .post-detail h1{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: blue;
+    color: rgb(255, 255, 255);
+}
+
+.post-detail p{
+    color: white;
+}
+
+.list-group{
+    margin: 10px;
+    padding: 0px;
+ 
 }

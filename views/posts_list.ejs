@@ -1,0 +1,22 @@
+<ul class="list-group">
+    <li class="list-group-item">
+        <div class="card mb-3" style="max-width: 900px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+              <img src= "<%= `/images/allposts/${post.image}`%>" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <%= post.title %>
+                  </h5>                
+                  <p class="card-text">
+                    <%= post.description %>
+                  </p>
+                  <a href="/posts/<%= post.id %>" class="btn btn-primary">Ler mais</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </li>
+  </ul>

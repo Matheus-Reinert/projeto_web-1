@@ -16,14 +16,36 @@ var getPosts = function(){
         },
         {
             id: 3,
-            title: 'Sistema automatico de posts',
-            image: 'post2.jpg',
-            description: 'Novo sistema do blog',
+            title: 'HMTL5',
+            image: 'post3.jpg',
+            description: 'Meu terceiro post',
+            body: 'Meu terceiro post bla bla'
+        },
+        {
+            id: 4,
+            title: 'CSS3',
+            image: 'post4.jpeg',
+            description: 'Meu quartoo post',
+            body: 'Meu terceiro post bla bla'
+        },
+        {
+            id: 5,
+            title: 'Javascript',
+            image: 'post5.jpg',
+            description: 'Meu quinto post',
+            body: 'Meu terceiro post bla bla'
+        },
+        {
+            id: 6,
+            title: 'Node.js',
+            image: 'post6.jpeg',
+            description: 'Meu sexto post',
             body: 'Meu terceiro post bla bla'
         },
     ];
 
     return posts;
+    
 }
 
 module.exports = {

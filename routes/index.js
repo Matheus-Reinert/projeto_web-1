@@ -6,7 +6,16 @@ var postsService = require('../services/postsService');
 router.get('/', function(req, res, next) {
     var posts = postsService.getPosts();
 
-    res.render('index', {title: 'Blog', posts:posts});
+    var post = posts.filter((post) => post.id <= 3);
+
+    res.render('index', {title: 'Blog', posts:post});
+});
+
+router.get('/posts', function(req, res, next){
+   
+    var posts = postsService.getPosts();
+
+    res.render('posts_all', {title: 'Posts', posts: posts});
 });
 
 router.get('/posts/:postId', function(req, res, next){
@@ -18,8 +27,15 @@ router.get('/posts/:postId', function(req, res, next){
 
     res.render('post', {title: post.title, post: post});
 
-
-
 })
+
+router.get('/projects', function(req, res, next) {
+
+    var projects = projectsService.getProjects();
+
+
+    res.render('projects', {title: 'Projetos', projects:projects});
+    
+});
 
 module.exports = router;
