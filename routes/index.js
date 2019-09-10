@@ -39,7 +39,7 @@ router.get('/projects', function(req, res, next) {
     
 })
 
-router.get('/projects/:projectsId', function(req, res, next){
+router.get('/projects/:projectId', function(req, res, next){
     var projectId = req.params.projectId;
 
     var projects = projectsService.getProjects();

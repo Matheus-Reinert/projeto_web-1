@@ -30,13 +30,13 @@ body{
 }
 
 .post-detail img{
-    width: 800px;
-    height: 400px; 
-    box-align: center; 
+    width: 600px;
+    height: 300px; 
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 .post-detail h1{
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     color: rgb(255, 255, 255);
@@ -52,8 +52,14 @@ body{
  
 }
 
-.project-detail image{
-    width: 800px;
-    height: 400px; 
-    box-align: center; 
+.project-detail{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.project img{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
 }
