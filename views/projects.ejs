@@ -1,12 +1,20 @@
-<div class="card" style="width: 18rem;">
-    <img src="<%= `/images/${post.image}`%>" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">
-        <%= projects.title %>
-      </h5>
-      <p class="card-text">
-        <%= projects.description %>
-      </p>
-      <a href="/projects/<%= projects.id %>" class="btn btn-primary">Ler mais</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <%- include('imports'); -%>
+    
+  </head>
+  <body>
+    <%- include('navbar'); -%>
+
+    <div class="container">
+      <div class="row">
+        <% projects.forEach((project) => { %>
+          <%- include('projects_view', {project: project}); -%>
+        <% }); %>
+      </div>
     </div>
-</div>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var postsService = require('../services/postsService');
+var projectsService = require('../services/projectsService');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -36,6 +37,17 @@ router.get('/projects', function(req, res, next) {
 
     res.render('projects', {title: 'Projetos', projects:projects});
     
-});
+})
+
+router.get('/projects/:projectsId', function(req, res, next){
+    var projectId = req.params.projectId;
+
+    var projects = projectsService.getProjects();
+    
+    var project = projects.filter((project) => project.id == projectId)[0];
+
+    res.render('project', {title: project.name, project:project});
+
+})
 
 module.exports = router;

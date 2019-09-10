@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255), rgb(0, 5, 71));
+    background-image: linear-gradient(to bottom,rgb(0, 240, 208), rgb(0, 39, 167));
     height: 638px;
     width: 1313px;
     position: relative;
@@ -17,6 +17,16 @@ body{
     border: 300;
     color: rgb(0, 0, 0);
     margin: 10px; 
+}
+
+.card-img-top{
+    height: 200px;
+    width: 286px;
+}
+
+.card-img{
+    height: 200px;
+    width: 286px;
 }
 
 .post-detail img{
@@ -40,4 +50,10 @@ body{
     margin: 10px;
     padding: 0px;
  
+}
+
+.project-detail image{
+    width: 800px;
+    height: 400px; 
+    box-align: center; 
 }
