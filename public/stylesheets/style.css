@@ -63,3 +63,11 @@ body{
     width: 400px;
     border-radius: 10px;
 }
+
+.vagas-detail{
+    height: 210px;
+    width: 650px;
+    font-size: 14px;
+    padding: none;
+
+}
