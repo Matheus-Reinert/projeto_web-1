@@ -3,7 +3,7 @@ var router = express.Router();
 var vagasService = require('../services/vagasService');
 
 /* GET home page. */
-router.get('/vagas', function(req, res, next){
+router.get('/', function(req, res, next){
    
     var vagas = vagasService.getVagas();
 
