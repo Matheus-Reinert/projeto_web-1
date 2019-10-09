@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts</title>
+    <%- include('../../imports'); -%>
+</head>
+<body>
+    <%- include('../../navbar'); -%>
+
+    <div class= "container">
+
+        <div class = "row">
+            <div class = "col-md-12">
+                <h2>Novo Projeto</h2>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-md-12">
+            <form action="create" method="POST">
+                <div class="form-group">
+                    <label for="projectTitle">Título</label>
+                    <input name="name" type="text" class="form-control" id="projectTitle" placeholder="Título do Projeto">                    
+                </div>
+                <div class="form-group">
+                    <label for="projectImage">Imagem</label>
+                    <input name="image" type="text" class="form-control" id="projectImage" placeholder="Imagem">                    
+                </div>
+                <div class="form-group">
+                    <label for="projectSubject">Disciplina</label>
+                    <input name="subject" type="text" class="form-control" id="projectSubject" placeholder="Disciplina"></textarea>                    
+                </div>
+                <div class="form-group">
+                    <label for="projectDescription">Descrição</label>
+                    <textarea name="description" type="text" class="form-control" id="projectDescription" placeholder="Descrição"></textarea>                    
+                </div>                  
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

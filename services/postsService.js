@@ -15,6 +15,7 @@ var saveFilePosts = function(posts){
 
 var getPosts = function(){
     var posts = loadFilePosts();
+    
     return posts;  
 }
 
