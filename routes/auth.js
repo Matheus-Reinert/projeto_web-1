@@ -23,10 +23,26 @@ router.post("/login", function(req, res, next){
         req.session.authenticatedUsers.push(user);
         res.cookie('loginToken', user.loginToken, {maxAge: 900000, httpOnly: true});
         
-        res.redirect('admin/post');
+        res.redirect('/admin/posts');
     }
 
     res.render('login', {msg: 'Email e senha incorretos'});
 });
+
+router.get('/logout', function(req, res, next) {
+    var loginToken = req.cookies['loginToken'];
+  
+    if(req.session.authenticatedUsers) {
+      var authenticatedUsers = req.session.authenticatedUsers;
+      var user = authenticatedUsers.find(u => u.loginToken === loginToken);
+  
+      if (user) {
+        authenticatedUsers.splice(authenticatedUsers.findIndex(u => u.loginToken === loginToken), 1);
+        res.clearCookie("loginToken");
+      }
+    }
+  
+    res.redirect('/');
+  });
 
 module.exports = router;
